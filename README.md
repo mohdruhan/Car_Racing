@@ -29,6 +29,8 @@ An engaging and interactive game combining car racing with math quizzes. Solve m
 - **JavaScript**: Core game logic, including question generation and collision detection.
 
 ---
+## Link To try the game live
+  [Car Racing]([https://your-portfolio-link.com](https://mohdruhan.github.io/Car_Racing/))
 
 ## 📥 How to Run
 
