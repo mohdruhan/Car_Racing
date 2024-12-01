@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.game-container {
+    width: 400px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid black;
+    background-color: #fff;
+}
+
+.question-container {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.road {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: moveBackground 3s linear infinite;
+    background-size: contain; 
+    background-repeat: no-repeat;  
+    background-position: center;  
+}
+
+@keyframes moveBackground {
+    from {
+        background-position-y: 0;
+    }
+    to {
+        background-position-y: 100%;
+    }
+}
+
+.car {
+    position: absolute; 
+    width: 100px;        
+    height: 100px;       
+    background-size: contain; 
+    background-repeat: no-repeat;  
+    background-position: center;  
+    width: 50px;
+    height: 80px;
+    background-image: url(./car.png);
+    bottom: 20px;
+    left: 125px;
+    z-index: 10;
+}
+
+.score {
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.answer {
+    width: 90px;
+    height: 60px;
+    background: yellow;
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: moveAnswer 3s linear infinite;
+    z-index: 5;
+}
+
+@keyframes moveAnswer {
+    from {
+        top: -80px;
+    }
+    to {
+        top: 600px;
+    }
+}
+
