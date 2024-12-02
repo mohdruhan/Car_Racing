@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -94,3 +95,36 @@ body {
     }
 }
 
+/* Button container styles */
+.button-container {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30%; /* Space between buttons */
+}
+
+/* Circular button styles */
+.circle-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* Makes the button circular */
+    border: none;
+
+    color: white; /* White text */
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow */
+    transition: background-color 0.2s ease;
+}
+
+/* Hover and active states for buttons */
+
+
+.circle-button:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Reduce shadow on click */
+}

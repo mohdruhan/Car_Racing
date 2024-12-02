@@ -2,6 +2,13 @@ const car = document.querySelector('.car');
 const road = document.querySelector('.road');
 const scoreElement = document.getElementById('score');
 const questionElement = document.getElementById('question');
+const moveLeftButton = document.getElementById('moveLeftButton');
+const moveRightButton = document.getElementById('moveRightButton');
+
+// Add event listeners to buttons
+moveLeftButton.addEventListener('click', moveLeft);
+moveRightButton.addEventListener('click', moveRight);
+
 
 let positionX = 125; // Car starts in the left lane
 let score = 0;
